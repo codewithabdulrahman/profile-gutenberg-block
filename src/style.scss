@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Mixins Section 
+
+@mixin display-properties($display, $flex-direction, $justify-content, $align-items, $gap) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+.entry-header {
+    display: none;
+}
+
+.wrap {
+    padding: 0;
+    margin: 0;
+    max-width: 100% !important;
+}
+
+.site-main {
+    margin: 0 !important;
+}
+
+.main_save_box {
+
+    .header_section {
+        @include display-properties(flex, column, center, center, 5px);
+        height: 500px;
+        background-color: #182640;
+
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 4px;
+            text-transform: capitalize;
+            color: white;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #00ff5c96;
+            text-transform: capitalize;
+        }
+    }
+
+    .profile_section {
+        margin-top: 100px;
+
+        @include display-properties(flex, row, center, center, null);
+
+        .short_bio {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: -10px 10px 15px gray;
+            max-width: 300px;
+            padding: 1rem;
+            height: 400px;
+            position: relative;
+            z-index: 5;
+            left: 50px;
+            background-color: white;
+            transition: all 1s;
+
+            &:hover{
+                transform: translate(20px) scale(1.1);
+            }
+
+            h1 {
+                font-weight: 700;
+                color: black;
+                font-size: 2.3rem;
+                text-transform: capitalize;
+            }
+
+            p {
+                font-size: 1rem;
+                text-indent: 1rem;
+                color: lighten($color: #000000, $amount: 40);
+                font-style: italic;
+            }
+        }
+
+        .image_box img {
+            border-radius: 10px;
+        }
+
+    }
+
+    hr{
+        margin: 2rem 0;
+    }
+
+    .more_about_section {
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        p{
+            text-indent: 2rem;
+            margin: 20px 0;
+            font-size: 1rem;
+            color: lighten($color: #000000, $amount: 40);
+        }
+    }
+
+}

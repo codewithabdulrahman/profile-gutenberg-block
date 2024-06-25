@@ -1,0 +1,100 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.entry-header {
+  display: none;
+}
+
+.wrap {
+  padding: 0;
+  margin: 0;
+  max-width: 100% !important;
+}
+
+.site-main {
+  margin: 0 !important;
+}
+
+.main_save_box .header_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 500px;
+  background-color: #182640;
+}
+.main_save_box .header_section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  color: white;
+}
+.main_save_box .header_section h3 {
+  font-size: 1.2rem;
+  color: rgba(0, 255, 92, 0.5882352941);
+  text-transform: capitalize;
+}
+.main_save_box .profile_section {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main_save_box .profile_section .short_bio {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -10px 10px 15px gray;
+  max-width: 300px;
+  padding: 1rem;
+  height: 400px;
+  position: relative;
+  z-index: 5;
+  left: 50px;
+  background-color: white;
+  transition: all 1s;
+}
+.main_save_box .profile_section .short_bio:hover {
+  transform: translate(20px) scale(1.1);
+}
+.main_save_box .profile_section .short_bio h1 {
+  font-weight: 700;
+  color: black;
+  font-size: 2.3rem;
+  text-transform: capitalize;
+}
+.main_save_box .profile_section .short_bio p {
+  font-size: 1rem;
+  text-indent: 1rem;
+  color: #666666;
+  font-style: italic;
+}
+.main_save_box .profile_section .image_box img {
+  border-radius: 10px;
+}
+.main_save_box hr {
+  margin: 2rem 0;
+}
+.main_save_box .more_about_section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.main_save_box .more_about_section p {
+  text-indent: 2rem;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #666666;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
